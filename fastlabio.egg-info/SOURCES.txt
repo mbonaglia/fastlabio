@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+fastlabio.egg-info/PKG-INFO
+fastlabio.egg-info/SOURCES.txt
+fastlabio.egg-info/dependency_links.txt
+fastlabio.egg-info/requires.txt
+fastlabio.egg-info/top_level.txt
+tests/test_camera.py
+tests/test_motor.py

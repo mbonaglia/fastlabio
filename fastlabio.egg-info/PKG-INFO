@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: fastlabio
+Version: 0.1.0
+Summary: FastAPI backend for controlling laboratory instruments.
+Author-email: Your Name <your.email@example.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/yourusername/fastlabio
+Project-URL: Bug Tracker, https://github.com/yourusername/fastlabio/issues
+Keywords: fastapi,instrument-control,pysilico,plico_motor
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: FastAPI
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: pydantic
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: httpx; extra == "dev"
+Dynamic: license-file
