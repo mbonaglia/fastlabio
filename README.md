@@ -1,4 +1,4 @@
-# Fast Lab IO: AI-Optimized Project Breakdown
+# Fast Lab IO: FastAPI-based laboratory I/O control system
 
 ## 1. Overview
 
