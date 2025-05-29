@@ -21,8 +21,8 @@ import numpy as np
 # Always use package imports for pytest (run pytest from project root)
 # from main import app
 # from ..main import app
-from fastlabio.main import app
-from camera import get_pysilico_camera
+from fastlabio.fastlabio.main import app
+from fastlabio.fastlabio.camera import get_pysilico_camera
 
 # Create a TestClient for the FastAPI application
 client = TestClient(app)

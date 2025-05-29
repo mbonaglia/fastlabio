@@ -1,0 +1,5 @@
+# Path: fastlabio/MANIFEST.in
+# -*- coding: utf-8 -*-
+
+include README.md LICENSE
+recursive-include tests * 

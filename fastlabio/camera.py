@@ -39,6 +39,25 @@ Note: Validate gain range based on specific camera capabilities if known.
 
 camera_router = APIRouter()
 
+# Add a synchronous function for getting a camera instance without dependency injection
+def get_pysilico_camera_sync():
+    """
+    Get a pysilico camera instance without FastAPI dependency injection.
+
+    Connects to the pysilico camera server and returns the camera instance.
+    Handles connection errors by returning None or raising a simple exception.
+    """
+    try:
+        logger.info(f"Attempting to connect to camera synchronously at {CAMERA_HOST}:{CAMERA_PORT}")
+        # Directly instantiate the pysilico camera client
+        camera = pysilico.camera(CAMERA_HOST, CAMERA_PORT)
+        logger.info("Camera connection successful.")
+        return camera
+    except Exception as e:
+        logger.error(f"Error connecting to camera synchronously: {e}")
+        # Depending on desired behavior, you might return None or raise the exception
+        return None # Or raise e
+
 async def get_pysilico_camera():
     """
     FastAPI dependency to get a pysilico camera instance.

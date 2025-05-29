@@ -20,8 +20,8 @@ from unittest.mock import patch, MagicMock
 # Always use package imports for pytest (run pytest from project root)
 # from main import app
 # from ..main import app
-from fastlabio.main import app
-from motor import get_plico_motor, MotorMoveRequest, MotorSpeedRequest
+from fastlabio.fastlabio.main import app
+from fastlabio.fastlabio.motor import get_plico_motor, MotorMoveRequest, MotorSpeedRequest
 
 # Create a TestClient for the FastAPI application
 client = TestClient(app)

@@ -18,10 +18,10 @@ from fastapi import FastAPI
 
 # Import the camera router
 # from .camera import camera_router # Remove relative import
-from camera import camera_router # Use absolute import relative to package root
+from fastlabio.camera import camera_router # Use absolute import relative to package root
 
 # Import the motor router
-from motor import motor_router # Use absolute import relative to package root
+from fastlabio.motor import motor_router # Use absolute import relative to package root
 
 # Set up basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

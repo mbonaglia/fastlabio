@@ -3,8 +3,8 @@ uvicorn[standard]
 pydantic
 opencv-python
 numpy
-
-[dev]
+pysilico
+pysilico_server
 pytest
 pytest-asyncio
 httpx
